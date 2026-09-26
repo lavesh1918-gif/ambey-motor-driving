@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <rect width="800" height="800" fill="#ffffff" />
+  
+  <!-- Outer Red Arc around Steering Wheel -->
+  <path d="M 195 330 A 215 215 0 1 1 605 330" fill="none" stroke="#D32328" stroke-width="42" stroke-linecap="round" />
+
+  <!-- Black Steering Wheel -->
+  <!-- Outer Wheel Rim -->
+  <path d="M 235 340 A 175 175 0 1 1 565 340" fill="none" stroke="#161616" stroke-width="48" stroke-linecap="round" />
+  <!-- Inner Wheel Opening & Hub -->
+  <!-- Center Horn Hub -->
+  <circle cx="400" cy="270" r="38" fill="#161616" />
+  <circle cx="400" cy="270" r="26" fill="#ffffff" />
+  <!-- Left Spoke -->
+  <path d="M 260 260 L 362 268 L 362 278 L 260 286 Z" fill="#161616" />
+  <!-- Right Spoke -->
+  <path d="M 540 260 L 438 268 L 438 278 L 540 286 Z" fill="#161616" />
+  <!-- Bottom Center Spoke -->
+  <path d="M 388 308 L 412 308 L 418 365 L 382 365 Z" fill="#161616" />
+
+  <!-- Car Silhouette Front Facing -->
+  <g id="car-silhouette">
+    <!-- Windshield & Roof Frame -->
+    <path d="M 305 315 L 335 255 Q 400 248 465 255 L 495 315 Z" fill="#ffffff" stroke="#161616" stroke-width="12" stroke-linejoin="round" />
+    <!-- Windshield Glass -->
+    <path d="M 322 305 L 344 263 Q 400 258 456 263 L 478 305 Z" fill="#ffffff" />
+    
+    <!-- Side Mirrors -->
+    <!-- Left Mirror -->
+    <path d="M 292 340 L 255 340 Q 250 355 265 362 L 296 352 Z" fill="#161616" />
+    <!-- Right Mirror -->
+    <path d="M 508 340 L 545 340 Q 550 355 535 362 L 504 352 Z" fill="#161616" />
+
+    <!-- Car Body / Hood -->
+    <!-- Main Hood Line & Fender Bulges -->
+    <path d="M 265 350 Q 275 330 305 325 L 495 325 Q 525 330 535 350 L 555 390 Q 560 415 540 422 L 260 422 Q 240 415 245 390 Z" fill="#ffffff" stroke="#161616" stroke-width="14" stroke-linejoin="round" />
+
+    <!-- Headlights -->
+    <!-- Left Headlight -->
+    <path d="M 268 390 Q 310 395 335 422 L 285 422 Q 262 412 268 390 Z" fill="#161616" />
+    <path d="M 276 396 Q 305 400 322 416" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+    <!-- Right Headlight -->
+    <path d="M 532 390 Q 490 395 465 422 L 515 422 Q 538 412 532 390 Z" fill="#161616" />
+    <path d="M 524 396 Q 495 400 478 416" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Front Grille -->
+    <path d="M 345 400 L 455 400 L 442 422 L 358 422 Z" fill="#161616" />
+  </g>
+
+  <!-- Curving Road & Red Swoosh Graphic -->
+  <g id="road-graphic">
+    <!-- Red Sweeping Road Ribbon Border -->
+    <path d="M 175 505 L 340 445 Q 480 435 590 480 Q 615 490 622 492 L 610 498 Q 470 448 335 462 L 185 515 Z" fill="#D32328" />
+    
+    <!-- Dark Road Surface -->
+    <path d="M 315 500 Q 460 440 645 495 L 685 528 Q 490 470 345 520 Z" fill="#1f2429" />
+    <path d="M 255 525 L 345 520 Q 490 470 685 528 L 675 540 Q 480 485 305 538 Z" fill="#1f2429" />
+
+    <!-- Road Markings (White dashes) -->
+    <path d="M 360 514 L 395 506 L 415 500 L 380 508 Z" fill="#ffffff" />
+    <path d="M 445 490 L 490 484 L 505 482 L 460 488 Z" fill="#ffffff" />
+    <path d="M 535 480 L 580 483 L 595 485 L 550 482 Z" fill="#ffffff" />
+    <path d="M 618 488 L 652 498 L 658 502 L 624 492 Z" fill="#ffffff" />
+  </g>
+
+  <!-- Brand Typography: SHREE AMBHEY -->
+  <g id="brand-text" transform="translate(0, 50)">
+    <text x="400" y="540" text-anchor="middle" font-family="'Arial Black', 'Impact', 'Outfit', sans-serif" font-weight="900" font-size="74" fill="#D32328" letter-spacing="2">
+      SHREE AMBHEY
+    </text>
+
+    <!-- Subtitle: — MOTOR DRIVING — -->
+    <!-- Left Accent Line -->
+    <line x1="45" y1="592" x2="105" y2="592" stroke="#D32328" stroke-width="10" stroke-linecap="round" />
+    <!-- Right Accent Line -->
+    <line x1="695" y1="592" x2="755" y2="592" stroke="#D32328" stroke-width="10" stroke-linecap="round" />
+    
+    <text x="400" y="604" text-anchor="middle" font-family="'Arial Black', 'Impact', 'Outfit', sans-serif" font-weight="900" font-size="48" fill="#161616" letter-spacing="5">
+      MOTOR DRIVING
+    </text>
+  </g>
+</svg>
