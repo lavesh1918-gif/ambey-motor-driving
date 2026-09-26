@@ -31,9 +31,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEnquiry }) => {
         {/* Poster Fallback Image always present until video plays smoothly */}
         <img
           src={IMAGES.heroPoster}
-          alt="Learner practicing driving on real Indian road"
+          alt="Car driving training session on Jaipur road with dual-control vehicle"
           referrerPolicy="no-referrer"
           loading="eager"
+          fetchPriority="high"
+          width="1600"
+          height="900"
           className={`absolute inset-0 w-full h-full object-cover object-center filter brightness-[0.45] transition-opacity duration-1000 ${
             videoLoaded ? 'opacity-0 pointer-events-none' : 'opacity-100'
           }`}
@@ -88,7 +91,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEnquiry }) => {
 
             {/* Supporting Copy */}
             <p className="mt-4 sm:mt-5 text-base sm:text-lg md:text-xl text-neutral-200 max-w-2xl leading-relaxed font-normal">
-              15 Days ka practical Master Driving Course — daily driving practice, free pickup aur licence guidance ke saath.
+              Car driving school in Jaipur with 15 Days practical Master Driving Course — daily ~8 km driving practice, free doorstep pickup aur licence guidance ke saath.
             </p>
 
             {/* Highlights Grid (15 Days, Daily Practice, Approx 8 KM Daily, Free Pickup) */}

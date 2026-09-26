@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { TrustStrip } from './components/TrustStrip';
@@ -20,9 +20,36 @@ import { LotusStudioSection } from './components/LotusStudioSection';
 import { Footer } from './components/Footer';
 import { FloatingActions } from './components/FloatingActions';
 import { EnquiryModal } from './components/EnquiryModal';
+import { updatePageSEO } from './utils/seo';
 
 export default function App() {
   const [isEnquiryOpen, setIsEnquiryOpen] = useState(false);
+
+  useEffect(() => {
+    const handleRouteChange = () => {
+      const path = window.location.pathname;
+      const meta = updatePageSEO(path);
+
+      if (meta.targetSectionId && meta.targetSectionId !== 'home') {
+        setTimeout(() => {
+          const el = document.getElementById(meta.targetSectionId!);
+          if (el) {
+            const topOffset = 80;
+            const elementPosition = el.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - topOffset;
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth',
+            });
+          }
+        }, 150);
+      }
+    };
+
+    handleRouteChange();
+    window.addEventListener('popstate', handleRouteChange);
+    return () => window.removeEventListener('popstate', handleRouteChange);
+  }, []);
 
   return (
     <div className="min-h-screen flex flex-col bg-[#fafafa] text-[#1a1a1a] selection:bg-red-600 selection:text-white">

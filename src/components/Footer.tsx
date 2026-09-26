@@ -2,22 +2,31 @@ import React from 'react';
 import { Logo } from './Logo';
 import { BUSINESS_INFO } from '../data/content';
 import { Phone, MessageCircle, MapPin, Navigation, ExternalLink } from 'lucide-react';
+import { updatePageSEO } from '../utils/seo';
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Master Course', href: '#master-course' },
-    { name: 'Practice Topics', href: '#training' },
-    { name: 'Training Journey', href: '#journey' },
-    { name: 'Location', href: '#location' },
-    { name: 'FAQ', href: '#faq' },
+    { name: 'Home', href: '#home', path: '/' },
+    { name: 'About Us', href: '#about', path: '/about' },
+    { name: 'Master Course (₹3,000)', href: '#master-course', path: '/course' },
+    { name: 'Practical Driving Training', href: '#training', path: '/training' },
+    { name: 'Free Doorstep Pickup', href: '#pickup', path: '/pickup' },
+    { name: 'Licence Guidance', href: '#licence', path: '/licence' },
+    { name: 'Location & Map', href: '#location', path: '/location' },
+    { name: 'FAQ', href: '#faq', path: '/faq' },
+    { name: 'Contact & Admissions', href: '#contact', path: '/contact' },
   ];
 
-  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleSmoothScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+    path: string
+  ) => {
     e.preventDefault();
+    window.history.pushState({}, '', path);
+    updatePageSEO(path);
     const target = document.querySelector(href);
     if (target) {
       const topOffset = 80;
@@ -67,8 +76,8 @@ export const Footer: React.FC = () => {
               {quickLinks.map((link) => (
                 <li key={link.name}>
                   <a
-                    href={link.href}
-                    onClick={(e) => handleSmoothScroll(e, link.href)}
+                    href={link.path}
+                    onClick={(e) => handleSmoothScroll(e, link.href, link.path)}
                     className="hover:text-white transition-colors cursor-pointer"
                   >
                     {link.name}

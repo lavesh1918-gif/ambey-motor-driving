@@ -1,0 +1,10 @@
+# Robots.txt for Shree Ambhey Motor Driving
+# Domain: https://shree-ambey-motor-driving-school.com/
+
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /sitemap.xml
+
+# Sitemap reference
+Sitemap: https://shree-ambey-motor-driving-school.com/sitemap.xml

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Logo } from './Logo';
 import { BUSINESS_INFO } from '../data/content';
 import { Phone, MessageCircle, Menu, X, ArrowUpRight } from 'lucide-react';
+import { updatePageSEO } from '../utils/seo';
 
 interface NavbarProps {
   onOpenEnquiry: () => void;
@@ -20,19 +21,21 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquiry }) => {
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Master Course', href: '#master-course', badge: '₹3,000' },
-    { name: 'Practice', href: '#training' },
-    { name: 'Pickup', href: '#pickup' },
-    { name: 'Journey', href: '#journey' },
-    { name: 'Location', href: '#location' },
-    { name: 'FAQ', href: '#faq' },
+    { name: 'Home', href: '#home', path: '/' },
+    { name: 'About', href: '#about', path: '/about' },
+    { name: 'Master Course', href: '#master-course', path: '/course', badge: '₹3,000' },
+    { name: 'Practice', href: '#training', path: '/training' },
+    { name: 'Pickup', href: '#pickup', path: '/pickup' },
+    { name: 'Journey', href: '#journey', path: '/training' },
+    { name: 'Location', href: '#location', path: '/location' },
+    { name: 'FAQ', href: '#faq', path: '/faq' },
   ];
 
-  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string, path: string) => {
     e.preventDefault();
     setMobileMenuOpen(false);
+    window.history.pushState({}, '', path);
+    updatePageSEO(path);
     const target = document.querySelector(href);
     if (target) {
       const topOffset = 80;
@@ -58,8 +61,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquiry }) => {
         <div className="flex items-center justify-between">
           {/* Brand Logo */}
           <a
-            href="#home"
-            onClick={(e) => handleLinkClick(e, '#home')}
+            href="/"
+            onClick={(e) => handleLinkClick(e, '#home', '/')}
             className="group flex items-center focus:outline-none focus:ring-2 focus:ring-red-500 rounded-lg"
             aria-label="Shree Ambhey Motor Driving Home"
           >
@@ -71,8 +74,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquiry }) => {
             {navLinks.map((link) => (
               <a
                 key={link.name}
-                href={link.href}
-                onClick={(e) => handleLinkClick(e, link.href)}
+                href={link.path}
+                onClick={(e) => handleLinkClick(e, link.href, link.path)}
                 className="relative px-2.5 py-2 text-sm font-semibold text-neutral-700 hover:text-red-600 transition-colors rounded-md group"
               >
                 <span>{link.name}</span>
@@ -150,8 +153,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquiry }) => {
             {navLinks.map((link) => (
               <a
                 key={link.name}
-                href={link.href}
-                onClick={(e) => handleLinkClick(e, link.href)}
+                href={link.path}
+                onClick={(e) => handleLinkClick(e, link.href, link.path)}
                 className="flex items-center justify-between px-3 py-2.5 text-base font-semibold text-neutral-800 hover:bg-neutral-50 hover:text-red-600 rounded-lg transition-colors"
               >
                 <span>{link.name}</span>

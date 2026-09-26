@@ -74,3 +74,19 @@ If deploying via drag-and-drop on the Cloudflare dashboard:
 | `bun run preview` | `npm run preview` | Serves the production build locally for verification |
 | `bun run lint` | `npm run lint` | Runs `tsc --noEmit` to verify type safety |
 | `bun run deploy` | `npm run deploy` | Builds the app and runs `wrangler deploy` |
+
+---
+
+## 5. Google Search Console & SEO Configuration
+
+- **Production Domain:** `https://shree-ambey-motor-driving-school.com/`
+- **Sitemap Location:** `https://shree-ambey-motor-driving-school.com/sitemap.xml`
+- **Robots.txt Location:** `https://shree-ambey-motor-driving-school.com/robots.txt`
+
+### Submitting to Google Search Console:
+1. Open [Google Search Console](https://search.google.com/search-console).
+2. Add your property using URL prefix: `https://shree-ambey-motor-driving-school.com/` (or via Domain DNS verification).
+3. Navigate to **Sitemaps** in the left sidebar.
+4. Enter `sitemap.xml` and click **Submit**.
+5. Google will fetch and validate the 8 canonical URLs.
+

@@ -4,7 +4,7 @@ import { FileCheck, ShieldCheck, AlertCircle, CheckCircle2, Phone, ExternalLink 
 
 export const LicenceGuidance: React.FC = () => {
   return (
-    <section className="py-16 sm:py-24 bg-neutral-50/80 border-b border-neutral-200">
+    <section id="licence" className="py-16 sm:py-24 bg-neutral-50/80 border-b border-neutral-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-neutral-200/80 text-neutral-800 text-xs font-bold uppercase tracking-wider mb-3">
