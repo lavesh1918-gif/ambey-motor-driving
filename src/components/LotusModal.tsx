@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { LotusLogo } from './LotusLogo';
-import { X, ExternalLink, Phone, Globe, Sparkles, CheckCircle2 } from 'lucide-react';
+import { X, ExternalLink, Phone, Globe, Sparkles, CheckCircle2, MessageCircle } from 'lucide-react';
+import { BUSINESS_INFO } from '../data/content';
 
 interface LotusModalProps {
   isOpen: boolean;
@@ -124,14 +125,14 @@ export const LotusModal: React.FC<LotusModalProps> = ({ isOpen, onClose }) => {
           <div className="mt-6 p-3.5 rounded-2xl bg-neutral-50 border border-neutral-200 grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
             <div>
               <div className="text-neutral-400 text-[10px] font-bold uppercase tracking-wider">
-                Direct Phone
+                Direct Phone / WhatsApp
               </div>
               <a
-                href="tel:8058378439"
+                href={`tel:${BUSINESS_INFO.lotusPhone}`}
                 className="font-bold text-neutral-900 hover:text-red-600 transition-colors flex items-center gap-1.5 mt-0.5"
               >
                 <Phone className="w-3.5 h-3.5 text-red-600" />
-                <span>8058378439</span>
+                <span>{BUSINESS_INFO.lotusPhone}</span>
               </a>
             </div>
 
@@ -140,7 +141,7 @@ export const LotusModal: React.FC<LotusModalProps> = ({ isOpen, onClose }) => {
                 Official Website
               </div>
               <a
-                href="https://lotuswebstudio.netlify.app/"
+                href={BUSINESS_INFO.lotusWebStudioUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-bold text-neutral-900 hover:text-red-600 transition-colors flex items-center gap-1.5 mt-0.5 truncate"
@@ -151,24 +152,34 @@ export const LotusModal: React.FC<LotusModalProps> = ({ isOpen, onClose }) => {
             </div>
           </div>
 
-          {/* Two Action Buttons: Visit Website & Call Lotus Web Studio */}
-          <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {/* Action Buttons: Visit Website, Call, WhatsApp */}
+          <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-2.5">
             <a
-              href="https://lotuswebstudio.netlify.app/"
+              href={BUSINESS_INFO.lotusWebStudioUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-neutral-900 hover:bg-neutral-800 text-white text-sm font-bold shadow-md transition-all cursor-pointer group"
+              className="inline-flex items-center justify-center gap-2 px-3.5 py-3 rounded-xl bg-neutral-900 hover:bg-neutral-800 text-white text-xs sm:text-sm font-bold shadow-md transition-all cursor-pointer group"
             >
               <span>Visit Website</span>
-              <ExternalLink className="w-4 h-4 text-neutral-400 group-hover:text-white transition-colors" />
+              <ExternalLink className="w-3.5 h-3.5 text-neutral-400 group-hover:text-white transition-colors" />
             </a>
 
             <a
-              href="tel:8058378439"
-              className="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-red-600 hover:bg-red-700 text-white text-sm font-bold shadow-md transition-all cursor-pointer"
+              href={BUSINESS_INFO.lotusWhatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-3.5 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-bold shadow-md transition-all cursor-pointer"
             >
-              <Phone className="w-4 h-4 text-white" />
-              <span>Call Lotus Web Studio</span>
+              <MessageCircle className="w-3.5 h-3.5 fill-current" />
+              <span>WhatsApp</span>
+            </a>
+
+            <a
+              href={`tel:${BUSINESS_INFO.lotusPhone}`}
+              className="inline-flex items-center justify-center gap-2 px-3.5 py-3 rounded-xl bg-red-600 hover:bg-red-700 text-white text-xs sm:text-sm font-bold shadow-md transition-all cursor-pointer"
+            >
+              <Phone className="w-3.5 h-3.5 text-white" />
+              <span>Call Lotus</span>
             </a>
           </div>
         </div>

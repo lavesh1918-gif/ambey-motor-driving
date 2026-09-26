@@ -22,7 +22,9 @@ export const BUSINESS_INFO = {
     'https://wa.me/917300436787?text=Hello%2C%20mujhe%20Shree%20Ambhey%20Motor%20Driving%20ke%20%E2%82%B93000%20Master%20Course%20ke%20baare%20mein%20details%20chahiye.',
   mapsUrl: 'https://maps.app.goo.gl/uSvBqygcH62zTrTd9',
   lotusWebStudioUrl: 'https://lotuswebstudio.netlify.app/',
-  lotusPhone: '8058378439',
+  lotusPhone: '+91 9983992084',
+  lotusWhatsappUrl: 'https://wa.me/919983992084',
+  lotusCallUrl: 'tel:+919983992084',
 };
 
 // Hero fallback poster only (all other images removed in favor of pure CSS/icons)

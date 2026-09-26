@@ -1,7 +1,7 @@
 import React from 'react';
 import { LotusLogo } from './LotusLogo';
 import { BUSINESS_INFO } from '../data/content';
-import { ExternalLink, Phone, Globe, CheckCircle2 } from 'lucide-react';
+import { ExternalLink, Phone, Globe, CheckCircle2, MessageCircle } from 'lucide-react';
 
 export const LotusStudioSection: React.FC = () => {
   const services = [
@@ -70,13 +70,25 @@ export const LotusStudioSection: React.FC = () => {
                 <ExternalLink className="w-3.5 h-3.5 text-neutral-700 group-hover:translate-x-0.5 transition-transform" />
               </a>
 
-              <a
-                href={`tel:${BUSINESS_INFO.lotusPhone}`}
-                className="text-xs text-neutral-400 hover:text-white flex items-center gap-1.5 transition-colors"
-              >
-                <Phone className="w-3.5 h-3.5 text-red-400" />
-                <span>Call {BUSINESS_INFO.lotusPhone}</span>
-              </a>
+              <div className="flex items-center gap-3 text-xs">
+                <a
+                  href={BUSINESS_INFO.lotusWhatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-emerald-400 hover:text-emerald-300 flex items-center gap-1.5 transition-colors font-medium"
+                >
+                  <MessageCircle className="w-3.5 h-3.5 fill-current" />
+                  <span>WhatsApp</span>
+                </a>
+                <span className="text-neutral-600">•</span>
+                <a
+                  href={`tel:${BUSINESS_INFO.lotusPhone}`}
+                  className="text-neutral-400 hover:text-white flex items-center gap-1.5 transition-colors"
+                >
+                  <Phone className="w-3.5 h-3.5 text-red-400" />
+                  <span>Call {BUSINESS_INFO.lotusPhone}</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
