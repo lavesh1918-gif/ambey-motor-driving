@@ -55,7 +55,7 @@ npx wrangler deploy
    - **Build command:** `bun run build`
    - **Build output directory:** `dist`
    - **Root directory:** `/`
-4. Click **Save and Deploy**. Cloudflare will automatically build and deploy on every push. Single-page application routing is handled by `public/_redirects`.
+4. Click **Save and Deploy**. Cloudflare will automatically build and deploy on every push. Single-page application routing is natively handled by Cloudflare Static Assets (`not_found_handling = "single-page-application"`).
 
 ### Option C: Cloudflare Pages Manual Upload (Drag & Drop)
 If deploying via drag-and-drop on the Cloudflare dashboard:
