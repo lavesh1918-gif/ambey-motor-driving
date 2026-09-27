@@ -82,11 +82,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEnquiry }) => {
 
             {/* Main Heading */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-['Outfit'] text-white tracking-tight leading-[1.12]">
-              Driving Seekhiye{' '}
+              Shree Ambhey Motor Driving –{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-red-500 to-red-400">
-                Confidence
+                Car Driving School
               </span>{' '}
-              Ke Saath
+              in Jaipur
             </h1>
 
             {/* Supporting Copy */}

@@ -262,55 +262,67 @@ export const PRACTICE_TOPICS: PracticeTopic[] = [
 
 export const GALLERY_ITEMS: GalleryItem[] = [];
 
-// FAQ items matching prompt
+// FAQ items matching prompt & voice search queries
 export const FAQS: FAQItem[] = [
   {
     id: 'faq-1',
-    question: 'Master Course ki fees kitni hai?',
+    question: 'Master Course ki fees kitni hai? (Driving course fees in Jaipur)',
     answer:
-      'Master Driving Course ki fees ₹3,000 hai. Isme 15 days ki daily practical driving training, approx 8 km daily practice aur free pickup facility shamil hai.',
+      'Master Driving Course ki complete fees flat ₹3,000 hai. Is all-inclusive package mein poore 15 days ki daily practical car driving training, approx 8 km daily on-road running practice aur free doorstep pickup facility shamil hai. Koi hidden charges nahi hain.',
   },
   {
     id: 'faq-2',
-    question: 'Course kitne din ka hai?',
+    question: 'Course kitne din ka hai aur daily schedule kya rehta hai?',
     answer:
-      'Yeh Master Course poore 15 Days ka comprehensive program hai, jisme daily practical training sessions provide kiye jaate hain.',
+      'Yeh Master Course poore 15 Days ka systematic practical program hai. Daily scheduled batch timings par dedicated on-road hands-on vehicle sessions provide kiye jaate hain.',
   },
   {
     id: 'faq-3',
-    question: 'Daily kitni driving practice hoti hai?',
+    question: 'Daily kitni driving practice hoti hai? (Approximately 8 km daily practice)',
     answer:
-      'Training ke dauran daily approximately 8 km practical road driving practice karwayi jaati hai, taaki learner ko real-world roads ka solid experience mile.',
+      'Training ke dauran daily approximately 8 km real road driving practice karwayi jaati hai, taaki learner ko Jaipur city traffic aur colony streets ka genuine hands-on experience mile.',
   },
   {
     id: 'faq-4',
-    question: 'Kya free pickup available hai?',
+    question: 'Kya free doorstep pickup available hai? (Driving classes with pickup Jaipur)',
     answer:
-      'Haan, Shree Ambhey Motor Driving ke Master Course mein Free Pickup facility available hai training sessions ke liye.',
+      'Haan, Shree Ambhey Motor Driving ke Master Course learners ke liye doorstep Free Pickup facility available hai training sessions ke batch timing par.',
   },
   {
     id: 'faq-5',
-    question: 'Kya beginners join kar sakte hain?',
+    question: 'Kya zero experience wale beginners join kar sakte hain? (Learn driving from zero)',
     answer:
-      'Bilkul! Yeh training specially zero-experience first-time beginners ke liye design ki gayi hai. Bilkul basic level se patient and supportive tarike se guide kiya jaata hai.',
+      'Bilkul! Yeh training specially zero-experience first-time beginners ke liye design ki gayi hai. Experienced trainer Satyanarayan Sharma (Satish Sharma) bilkul basic clutch-brake balance aur steering control se patient tarike se guide karte hain.',
   },
   {
     id: 'faq-6',
-    question: 'Licence ke liye guidance milti hai?',
+    question: 'Driving licence aur RTO test ke liye kya guidance milti hai?',
     answer:
-      'Haan, driving licence process ko samajhne mein poori guidance provide ki jaati hai. (Dhyan rahe: Licence approval aur eligibility applicable government rules aur RTO par depend karti hai).',
+      'Haan, learner licence application, Sarathi Parivahan process aur RTO driving test track rules ko samajhne mein poori guidance provide ki jaati hai. (Dhyan rahe: Official licence approval aur eligibility applicable government rules aur RTO norms par depend karti hai).',
   },
   {
     id: 'faq-7',
-    question: 'Course book kaise karein?',
+    question: 'Training car mein kya safety features hain? (Dual-control pedals)',
     answer:
-      'Aap seedhe phone number 7300436787 par Call kar sakte hain ya WhatsApp par message bhej kar apna preferred batch timing aur start date discuss kar sakte hain.',
+      'Humari training cars fully dual-control setup ke sath equipped hain. Instructor ke paas co-driver dual clutch aur brake pedals hote hain, jisse road practice ke dauran learner 100% safe aur confident rehta hai.',
   },
   {
     id: 'faq-8',
-    question: 'Location kahan hai?',
+    question: 'Batch timings kya hain aur course kaise book karein?',
     answer:
-      'Shree Ambhey Motor Driving P-19, Durga Vihar B, Nangal Jaisa Bhora Niwaru Road Jaipur, Rajasthan par situated hai. Aap Google Maps link se direct navigation le sakte hain.',
+      'Morning aur evening flexible batches available hain. Aap seedhe 7300436787 par Call ya WhatsApp message bhej kar apna preferred batch time aur start date book kar sakte hain.',
+  },
+  {
+    id: 'faq-9',
+    question: 'Driving school ki location kahan hai? (Niwaru Road, Durga Vihar B)',
+    answer:
+      'Shree Ambhey Motor Driving P-19, Durga Vihar B, Nangal Jaisa Bhora, Niwaru Road, Jaipur, Rajasthan par situated hai. Google Maps par verified location ke sath direct navigation available hai.',
+  },
+  {
+    id: 'faq-10',
+    question: 'RTO driving test mein automated track par kis cheez ka dhyan rakhna hota hai?',
+    answer:
+      'RTO test track par H formation, 8 figure, reverse S-curve aur gradient slope stop & start test hote hain. Humari practical training mein in sabhi manoeuvres ki dedicated practice karwayi jaati hai taaki test ke din panic na ho.',
   },
 ];
 

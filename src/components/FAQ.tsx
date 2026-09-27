@@ -19,7 +19,7 @@ export const FAQ: React.FC = () => {
           </div>
 
           <h2 className="text-3xl sm:text-4xl font-extrabold font-['Outfit'] text-neutral-900 tracking-tight">
-            Frequently Asked Questions
+            Frequently Asked Questions — Car Driving Classes & Fees in Jaipur
           </h2>
 
           <p className="mt-3 text-sm sm:text-base text-neutral-600">

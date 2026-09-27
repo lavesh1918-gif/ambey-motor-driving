@@ -76,7 +76,7 @@ export const WhyChooseUs: React.FC = () => {
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-extrabold font-['Outfit'] text-neutral-900 tracking-tight">
-              Why Learners Choose Practical Training
+              Why Learners Choose Shree Ambhey Car Driving School in Jaipur
             </h2>
 
             <p className="mt-3 text-sm sm:text-base text-neutral-600">

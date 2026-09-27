@@ -109,7 +109,7 @@ export const About: React.FC = () => {
 
             {/* Exact Required Heading */}
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold font-['Outfit'] text-neutral-900 tracking-tight leading-tight">
-              Driving Sirf Gaadi Chalana Nahi Hai.
+              Practical Car Driving Training in Jaipur — Driving Sirf Gaadi Chalana Nahi Hai.
             </h2>
 
             {/* Exact Required Copy */}

@@ -13,7 +13,7 @@ export const Safety: React.FC = () => {
           </div>
 
           <h2 className="text-3xl sm:text-4xl font-extrabold font-['Outfit'] text-neutral-900 tracking-tight">
-            Safe Driving Starts With Good Training
+            Jaipur Road Safety & Traffic Awareness Driving Lessons
           </h2>
 
           <p className="mt-3 text-sm sm:text-base text-neutral-600">

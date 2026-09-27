@@ -56,7 +56,7 @@ export const MasterCourse: React.FC<MasterCourseProps> = ({ onOpenEnquiry }) => 
           </div>
 
           <h2 className="text-3xl sm:text-4xl font-extrabold font-['Outfit'] text-neutral-900 tracking-tight">
-            Master Driving Course
+            15 Days Master Driving Course in Jaipur — ₹3,000
           </h2>
 
           <p className="mt-3 text-base text-neutral-600">

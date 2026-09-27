@@ -102,7 +102,7 @@ export const PracticalDrivingTraining: React.FC = () => {
           </div>
 
           <h2 className="text-3xl sm:text-4xl font-extrabold font-['Outfit'] text-neutral-900 tracking-tight">
-            Practical Driving Training
+            Practical Car Driving Lessons & Training in Jaipur
           </h2>
 
           <p className="mt-3 text-base text-neutral-600">

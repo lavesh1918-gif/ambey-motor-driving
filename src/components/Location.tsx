@@ -13,7 +13,7 @@ export const Location: React.FC = () => {
           </div>
 
           <h2 className="text-3xl sm:text-4xl font-extrabold font-['Outfit'] text-neutral-900 tracking-tight">
-            Find Shree Ambhey Motor Driving
+            Driving School Location — Durga Vihar B, Niwaru Road, Jaipur
           </h2>
 
           <p className="mt-3 text-sm sm:text-base text-neutral-600">

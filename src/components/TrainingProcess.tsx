@@ -17,7 +17,7 @@ export const TrainingProcess: React.FC<TrainingProcessProps> = ({ onOpenEnquiry 
           </div>
 
           <h2 className="text-3xl sm:text-4xl font-extrabold font-['Outfit'] text-neutral-900 tracking-tight">
-            Training Journey
+            15 Days Car Driving Training Journey — Step-by-Step Learning Path
           </h2>
 
           <p className="mt-3 text-sm sm:text-base text-neutral-600">

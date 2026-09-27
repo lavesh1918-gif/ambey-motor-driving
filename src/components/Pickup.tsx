@@ -19,7 +19,7 @@ export const Pickup: React.FC<PickupProps> = ({ onOpenEnquiry }) => {
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-extrabold font-['Outfit'] text-neutral-900 tracking-tight">
-              Pickup Facility
+              Free Doorstep Pickup Driving Classes in Jaipur
             </h2>
 
             <p className="mt-4 text-base sm:text-lg text-neutral-700 leading-relaxed">
