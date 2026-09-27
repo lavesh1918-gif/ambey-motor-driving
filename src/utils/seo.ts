@@ -215,5 +215,14 @@ export function updatePageSEO(pathname: string): PageMeta {
   }
   robotsTag.setAttribute('content', 'index, follow');
 
+  // Send Google Analytics page_view event on SPA route changes
+  if (typeof window !== 'undefined' && typeof (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag === 'function') {
+    (window as unknown as { gtag: (...args: unknown[]) => void }).gtag('event', 'page_view', {
+      page_title: meta.title,
+      page_location: canonicalUrl,
+      page_path: meta.canonicalPath,
+    });
+  }
+
   return meta;
 }
